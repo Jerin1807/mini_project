@@ -44,9 +44,11 @@ int main() {
             if (contacts.empty()) {
                 cout << "No contacts available.\n";
             } else {
+                // for better display
                 for (int i = 0; i < contacts.size(); i++) {
-                    contacts[i].display();
-                }
+                  cout << i + 1 << ". ";
+                  contacts[i].display();
+}
             }
         }
 
