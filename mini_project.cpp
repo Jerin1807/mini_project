@@ -78,21 +78,15 @@ int main() {
             cout << "Enter name to delete: ";
             cin >> deleteName;
 
-             bool found = false;
-
-             for (int i = 0; i < contacts.size(); i++) {
-                if (contacts[i].name == deleteName) {
-                      contacts.erase(contacts.begin() + i);
-                      i--; // adjust index after deletion
-                      found = true; }
+            bool found = false;
+            for (int i = 0;i <contact.size(); i++){
+                if(contacts[i].name == deleteName){
+                    contactserase(contacts.begin()+i);
+                    cout<<"contact deleted!\n";
+                    found = true;
+                    break;
     }
 }
-
-if (found) {
-    cout << "All matching contacts deleted!\n";
-}
-            }
-
             if (!found) {
                 cout << "Contact not found.\n";
             }
