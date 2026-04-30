@@ -1,7 +1,12 @@
 #include <iostream>
 #include <vector>
+#include<algorithm>
 using namespace std;
-
+// Function to convert string to lowercase
+string toLower(string str) {
+    transform(str.begin(), str.end(), str.begin(), ::tolower);
+    return str;
+}
 class Contact {
 public:
     string name;
@@ -57,7 +62,7 @@ int main() {
 
             bool found = false;
             for (int i = 0; i < contacts.size(); i++) {
-                if (contacts[i].name == searchName) {
+             if (toLower(contacts[i].name) == toLower(searchName))  {
                     contacts[i].display();
                     found = true;
                 }
