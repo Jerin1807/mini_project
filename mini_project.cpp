@@ -6,10 +6,12 @@ class Contact {
 public:
     string name;
     string phone;
+
   
     void input() {
         cout << "Enter Name: ";
         cin >> name;
+        
         cout << "Enter Phone: ";
         cin >> phone;
     }
@@ -33,14 +35,16 @@ int main() {
         cout << "Enter choice: ";
         cin >> choice;
 
-        if (choice == 1) {
+        if (choice == 1)
+        {
             Contact c;
             c.input();
             contacts.push_back(c);
             cout << "Contact Added!\n";
         }
 
-        else if (choice == 2) {
+        else if (choice == 2)
+            {
             if (contacts.empty()) {
                 cout << "No contacts available.\n";
             } else {
