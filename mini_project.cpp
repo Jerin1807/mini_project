@@ -17,7 +17,7 @@ public:
     }
 
     void display() {
-        cout << "Name: " << name << ", Phone: " << phone << endl;
+        cout << "Name: " << Name << ", Phone: " << phone << endl;
     }
 };
 
